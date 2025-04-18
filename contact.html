@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mental Health Support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            color: darkgreen;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: darkgreen;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        section {
+            padding: 2em;
+            margin: 0 10%;
+            background-color: lightgray;
+        }
+        h2 {
+            color: darkgreen;
+        }
+        
+        .contact-form, .complaint-form {
+            background-color: darkgray;
+           padding: 2.5em;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 1.5em;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 1em;
+            margin: 0.5em 0;
+            border: 1px solid darkgreen;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: darkgreen;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #2b6a2f;
+        }
+        .contact-info {
+            background-color: lightgray;
+            padding: 1.5em;
+            border-radius: 5px;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>We are here to listen and help. Reach out to us today!</p>
+    </header>
+<div style="background-color: darkgray; overflow: hidden;">
+        <a href="home.html" style="color: white; padding: 14px 20px; text-decoration: none; display: inline-block;">Home</a>
+        <a href="about.html" style="color: white; padding: 14px 20px; text-decoration: none; display: inline-block;">About</a>
+        <a href="resources.html" style="color: white; padding: 14px 20px; text-decoration: none; display: inline-block;">Resources</a>
+        <a href="contact.html" style="color: white; padding: 14px 20px; text-decoration: none; display: inline-block;">Contact</a>
+       </div>
+
+
+    <section>
+        <h2>Send Us a Message</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required rows="5" placeholder="Type your message here..."></textarea>
+                </div>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <h2>File a Complaint</h2>
+        <div class="complaint-form">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="complaint-name">Your Name</label>
+                    <input type="text" id="complaint-name" name="complaint-name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="complaint-email">Your Email</label>
+                    <input type="email" id="complaint-email" name="complaint-email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="complaint-message">Your Complaint</label>
+                    <textarea id="complaint-message" name="complaint-message" required rows="5" placeholder="Describe your complaint..."></textarea>
+                </div>
+                <input type="submit" value="Submit Complaint">
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <h2>Our Contact Information</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:abc@gmail.com" style="color: darkgreen;">abc@gmail.com</a></p>
+            <p>Phone: +91 1234567890</p>
+        </div>
+    </section>
+
+</body>
+</html>
